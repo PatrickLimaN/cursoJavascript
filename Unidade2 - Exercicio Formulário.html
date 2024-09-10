@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+     <!--Formulários-->
+     <form action="#">
+        <label for="nome"><b>Formulário de contato</b></label>
+        <br />
+        <label for="nome">Nome:</label>
+        <input type="text" name="Nome" placeholder="Nome Completo" id="nome" />
+        <br />
+        <label for="Email">Email:</label>
+        <input type="Email" name="Email" placeholder="Digite o Email" id="Email" />
+        <br />
+        <label for="tel">Telefone:</label>
+        <input type="tel" name="Phone" placeholder="Digite o telefone" id="phone" />
+
+        <p>Sexo:</p>
+
+        <!--Sexo-->
+        <input type="radio" name="sexo" value="masculino" id="masculino" />
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="sexo" value="feminino" id="masculino" />
+        <label for="feminino">feminino</label>
+
+        <!--Area de Interesse-->
+        <p></p>
+        <label for="area">Área de Interesse</label>
+        <select bane="area" id="area">
+            <option value="desenvolvimento"> desenvolvimento</option>
+            <option value="BD"> BD</option>
+            <option value="HTML">HTML</option>
+            
+        </select>
+        <br/>
+        <br/>
+
+        <!--Contato-->
+        <p>Preferencias de contato</p>
+        <input type="checkbox" name="contato" value="Email" id="Email" />
+        <label for="Email">Email</label>
+
+        <input type="checkbox" name="contato" value="Telefone" id="Telefone" />
+        <label for="Telefone">Telefone</label>
+
+        <input type="checkbox" name="contato" value="sms" id="sms" />
+        <label for="SMS">SMS</label>
+
+        <br>
+
+            <!--Mensagem-->
+        <label for="Mensagem">
+            <p>Mensagem</p>
+        </label>
+        <textarea
+            name="mensagem"
+            id="mensagem"
+            cols="30"
+            rows="5"
+            placeholder="Digite aqui sua mensagem">
+        </textarea>    
+
+
+        <!--Enviar-->
+        <input type="submit" value="Enviar"/> 
+</body>
+</html>
