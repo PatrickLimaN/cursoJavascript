@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="style_form.css">
+</head>
+<body>
+    <!--Formulários-->
+    <div class="container">
+        <h2>Formulário de Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome completo" id="nome"/>
+            <br/>
+            <label for="Email">Email:</label>
+            <input type="Email"  name="Email" placeholder="Digite seu email" id="Email"/>
+            <br/>
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="Phone" placeholder="Digite seu telefone" id="phone"/>
+
+            <label>Sexo:</label>
+             <!--Sexo-->
+            <div class="sexo">
+                <input type="radio" name="sexo" value="masculino" id="masculino"/>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" value="feminino" id="feminino"/>
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <!--Area de Interesse-->
+            <p></p>
+            <label for="area">Área de Interesse:</label>
+            <select id="area" name="area">
+                <option value="desenvolvimento">Desenvolvimento</option>
+                <option value="BD">BD</option>
+                <option value="HTML">HTML</option>
+            </select>
+            <br/>
+
+            <!--Contato-->
+
+            <label>Preferências de Contato:</label>
+            <div class="preferencias">
+                <input type="checkbox" name="preferencia" value="Email" id="emailContato"/>
+                <label for="email">Email</label>
+                <input type="checkbox" name="preferencia" value="Telefone" id="telefoneContato"/>
+                <label for="telefone">Telefone</label>
+                <input type="checkbox" name="preferencia" value="sms" id="smsContato"/>
+                <label for="SMS">SMS</label>
+            </div>
+
+            <!--Mensagem-->
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui"></textarea>
+
+            <!--Enviar-->
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
