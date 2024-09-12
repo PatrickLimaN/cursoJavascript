@@ -1,0 +1,95 @@
+/* Estilizando body display flex pra centralizar com o justify-content*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cdccf3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column; 
+    overflow: auto; 
+}
+
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img.perfil {
+    display: block;
+    margin: 0 10px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+h1 {
+    color: #032447;
+    margin: 0;
+    font-size: 2em; 
+}
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+}
+
+#sobre, #experiencia, #educacao, #habilidades, #contato {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #032447;
+    border-bottom: 3px solid #032447;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#sobre p, #experiencia p, #educacao p, #habilidades ul, #contato p {
+    color: #452;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#habilidades ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#habilidades ul li {
+    background: #e7f1ff;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+a {
+    color: #032447;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align:center;
+    color: #aaa;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
